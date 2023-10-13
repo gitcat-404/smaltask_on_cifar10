@@ -28,7 +28,14 @@ elif net == 'VGG':
     model = models.vgg.vgg16(pretrained=False)
 elif net == 'AlexNet':
     model = models.alexnet.alexnet(pretrained=False)
-
+elif net == 'Res18':
+    model = models.resnet.resnet18(pretrained=False)
+elif net == 'Res34':
+    model = models.resnet.resnet34(pretrained=False)
+elif net == 'Res101':
+    model = models.resnet.resnet101(pretrained=False)
+elif net == 'Res152':
+    model = models.resnet.resnet152(pretrained=False)   
 
 
 train_data = datasets.CIFAR10(root=root, train=True,transform=transform_train,download=False)
