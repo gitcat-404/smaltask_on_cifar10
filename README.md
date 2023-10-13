@@ -11,3 +11,10 @@ git clone https://github.com/gitcat-404/smaltask_on_cifar10
 3. 设置超参数，如EPOCH，LR等
 4. 设置需要使用的网络，这里提供了alexnet，vgg16，resnet50供使用，其中resnet50模型可以直接运行，而由于alexnet与vgg16原本是解决IMAGENet上1000分类问题的模型，因此输出层需要自行设置全连接层进行调整，由于时间原因我并未实现
 # 我的结果
+| 网络        | EPOCH   |  batchsize  |误差率 |
+| --------   | -----:   | :----: |:----: |
+| Resnet18     | 10    |   64   | 21.39 |
+| Resnet34    | 10    |   64   | 21.97 |
+| Resnet50     | 10    |   64   | 33.18 |
+| Resnet101    | 10    |   16   | 31.02 |
+| Resnet152     | 10    |   16   | 40.55 |
